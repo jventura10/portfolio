@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 body {
     background-image: url("../images/texture.jpg");
+}
+
+#headerLogo {
+    font-family: 'Pacifico', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
