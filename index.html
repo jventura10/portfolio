@@ -1,83 +1,270 @@
 <!DOCTYPE html>
-<html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Personal Portfolio for Full Stack Web Developer">
+            <meta name="author" content="Javier Ventura">
+            <meta mame="keywords" content="personal, portfolio, wev, developer, programmer, full,stack">
+            <title>Javier Ventura</title>
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Javier Ventura</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-</head>
+            <!-- Bootstrap Link -->
+            <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Custom CSS Link -->
+            <link href="assets/css/main.css" rel="stylesheet">
+            <!-- Font Awesome CSS Link -->
+            <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        </head>
+        <body>
+            <!-- Nav Section -->
+            <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+            <nav id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+                    <li class="sidebar-brand">
+                        <a href="#top" onclick=$("#menu-close").click();>Javier Ventura</a>
+                    </li>
+                    <li>
+                        <a href="#top" onclick=$("#menu-close").click();>Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" onclick=$("#menu-close").click();>About Me</a>
+                    </li>
+                    <li>
+                        <a href="#projOne" onclick=$("#menu-close").click();>Bring Your Own Diet</a>
+                    </li>
+                    <li>
+                        <a href="#projTwo" onclick=$("#menu-close").click();>Ventura Burgers</a>
+                    </li>
+                    <li>
+                        <a href="#projThree" onclick=$("#menu-close).click();>Friend Finder</a>
+                    </li>
+                    <li>
+                        <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End of Nav Section-->
 
-<body>
-    <!-- Container -->
-    <div class="container">
-
-        <!--Row 1-->
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="index.html" id="headerLogo">Javier Ventura</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="index.html">About</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="portfolio.html">Portfolio</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="contact.html">Contact</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <!-- End of Row 1-->
-        </div>
-        <br>
-
-        <!-- Row 2 -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="jumbotron">
-                    <h1 class="display-4">About Me</h1>
-                    <hr class="my-4">
-                    <p>Hello my name is Javier Ventura and welcome to my portfolio page. I started programming in late 2016 working with the python programming language on my own. Soon after I enrolled at
-                        Riverside City College and took a series of C++ courses. Along with those courses, I took some others working with Raspberry PI's assembly language, HTML, PHP, and Java. I then enrolled 
-                        at the University of California Extension's Full-Stack Web Development Bootcamp, currently 7 weeks in, finishing the front-end portion and moving on to the back-end portion until March. 
-                    </p>
-                    <p>The projects in the portfolio page are assignments done in this bootcamp and published to github pages. I have other activities and assignments in other github repositories of mine where I 
-                        work with various programming concepts. None of these are perfect by any means but I love to learn and improve. I also include a contact page that will function properly soon but for now
-                        I leave a link to email me from your email client in browser. I hope you enjoy taking a look.
-                    </p>
-                    <a href="https://github.com/jventura10"><i class="fab fa-github fa-2x"></i></a>
+            <!-- Home Section -->
+            <header id="top" class="header">
+                <div class="text-vertical-center">
+                    <h1 class="smoke-text">Javier Ventura</h1>
+                    <h3 class="navajo-text">Full-Stack Web Developer</h3>
+                    <br>
+                    <a href="#about" class="btn btn-light btn-lg">About Me</a>
                 </div>
-            </div>
-        <!-- End of Row 2-->
-        </div>
+            </header>
+            <!-- End of Home Section -->
 
-    <!-- End of Container -->
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-</body>
+            <!-- About Me Section -->
+            <section id="about" class="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="navajo-text">About Me</h2>
+                            <p class="lead smoke-text">I am Full-Stack Web Developer from Riverside, California that has worked with multiple technologies to solve problems and complete goals.
+                                I also have previous exprience programming in Python and C++. I have over 2 years experience programming in C++ that started at my local community college and since 
+                                enrolled in a Full-Stack Web Development Bootcamp at the University of California Riverside. 
+                            </p>
+                            <p class="lead smoke-text"> Although I have completed projects that can be viewed below, I also strive to keep learning so that 
+                                I can solve new problems or challenges in the future. The abilities to learn quickly, adapt and problem-solve are my best qualities. I work efficiently but am a 
+                                team player as well that likes to have fun and keep the project exciting. Please take a look below for project examples and contact information.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of About Me Section -->
 
-</html>
+            <!-- Project 1 Section -->
+            <section id="projOne" class="projects">
+                <div class="text-center">
+                    <h2 class="navajo-text"><a href="https://github.com/homr0/BYOD">Bring Your Own Diet</a></h2>
+                    <hr class="small">
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="https://homr0.github.io/BYOD/" target="_blank">
+                                        <img class="img-portfolio img-responsive" src="assets/images/byodOne.PNG">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="https://homr0.github.io/BYOD/" target="_blank">
+                                        <img class="img-portfolio img-responsive" src="assets/images/byodTwo.PNG">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="https://homr0.github.io/BYOD/" target="_blank">
+                                        <img class="img-portfolio img-responsive" src="assets/images/byodFour.PNG">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="https://homr0.github.io/BYOD/" target="_blank">
+                                        <img class="img-portfolio img-responsive" src="assets/images/byodThree.PNG">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1 text-center">
+                            <p class="lead smoke-text">Project One was a team effort called Bring Your Own Diet. This food application highlighted the best 
+                                recipes and restaurants in every State with a bonus feature of searching for recipes all while being able to save any favorites 
+                                logged in. I was a back-end developer in this project but also designed some of the front-end work. 
+                                We used technologies such as HTML, CSS, Bootstrap, Animate, jQuery, Edamam API, Opentable API, and Firebase.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Project 1 Section -->
+
+            <!-- Project 2 Section -->
+            <section id="projTwo" class="projects">
+                <div class="text-center">
+                    <h2 class="navajo-text"><a href="https://github.com/jventura10/burger">Ventura Burgers</a></h2>
+                    <hr class="small">
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="https://serene-mountain-58770.herokuapp.com/" target="_blank">
+                                        <img class="img-portfolio img-responsive" src="assets/images/burgerOne.PNG">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="https://serene-mountain-58770.herokuapp.com/" target="_blank">
+                                        <img class="img-portfolio img-responsive" src="assets/images/burgerTwo.PNG">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="https://serene-mountain-58770.herokuapp.com/" target="_blank">
+                                        <img class="img-portfolio img-responsive" src="assets/images/burgerThree.PNG">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="https://serene-mountain-58770.herokuapp.com/" target="_blank">
+                                        <img class="img-portfolio img-responsive" src="assets/images/burgerFour.PNG">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1 text-center">
+                            <p class="lead smoke-text">In this appplication called Ventura Burgers, I showcase the abilities of a full stack application. From selecting data from a database 
+                                    to a user being able to enter a name of a burger that will appear on screen shortly after. After you may update that data with a simple click of a button. This 
+                                    applicationn was fun to design, implement and build using technologies like HTML, CSS, jQuery, Node.js, Express.js, Express-Handlebars, mySQL. I deployed this
+                                    project with Heroku and a JawsDB add-on.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Project 2 Section -->
+
+            <!-- Project 3 Section -->
+            <section id="projThree" class="projects">
+                <div class="text-center">
+                    <h2 class="navajo-text"><a href="https://github.com/jventura10/FriendFinder">Friend Finder</a></h2>
+                    <hr class="small">
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="https://fast-peak-21374.herokuapp.com/" target="_blank">
+                                        <img class="img-portfolio img-responsive" src="assets/images/ffOne.PNG">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="https://fast-peak-21374.herokuapp.com/" target="_blank">
+                                        <img class="img-portfolio img-responsive" src="assets/images/ffTwo.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="https://fast-peak-21374.herokuapp.com/" target="_blank">
+                                        <img class="img-portfolio img-responsive" src="assets/images/ffThree.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="https://fast-peak-21374.herokuapp.com/" target="_blank">
+                                        <img class="img-portfolio img-responsive" src="assets/images/ffFour.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1 text-center">
+                            <p class="lead smoke-text"> Friend Finder is a again showcasing the abitlity to take in simple data from a user and manipulate it to do something more meaningful like matching 
+                                people. This application lets users fill out a survey about their interests and behind the scenes those question answers are used to match them with a friend.
+                                For this application I used technologies like HTML, CSS, Bootstrap, jQuery, Node.js, and Express.js.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Project 3 Section-->
+
+            <!-- Footer -->
+            <footer id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1 text-center">
+                            <h4><strong>Contact Information</strong></h4>
+                            <p>Javier Ventura</p>
+                            <p>Riverside, CA</p>
+                            <p><i class="fa fa-envelope-o fa-fw"></i><a href="mailto:jventura1097@gmail.com" target="_blank"> jventura1097@gmail.com</a></p>
+                            <br>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/javier-ventura-a95909126/" target="_blank"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/jventura10" target="_blank"><i class="fa fa-github-square fa-fw fa-3x"></i></a>
+                                </li>
+                            </ul>
+                            <hr class="small">
+                            <p class="text-muted">Copyright &copy; Javier Ventura 2019</p>
+                        </div>
+                    </div>
+                </div>
+                <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+            </footer>
+            <!-- End of Footer -->
+
+            <!-- Link to jQuery -->
+            <script src="assets/js/jquery.js"></script>
+            <!-- Link to Bootstrap- Javascript File -->
+            <script src="assets/js/bootstrap.min.js"></script>
+            <!-- Link to Other Required Functions-->
+            <script src="assets/js/functions.js"></script>
+        </body>
+    </html>
